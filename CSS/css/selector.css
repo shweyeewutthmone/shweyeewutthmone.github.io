@@ -63,3 +63,47 @@ a:active{
 a:visited{
     color: brown;
 }
+
+/* Target */
+
+p:target{
+    color: brown;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    line-height: 15px;
+}
+
+/*  */
+
+#myData{
+    width: 40%;
+    margin: auto;
+}
+input[type="text"]{
+    width: 100%;
+    height: 35px;
+}
+
+input[type="text"]:focus{
+    background-color: red;
+    color: white;
+    letter-spacing: 10px;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-style: italic;
+}
+
+input[type="checkbox"]:enabled + label{
+    color: green;
+}
+
+input[type="checkbox"]:disabled + label{
+    color: gray;
+}
+
+#fName:read-only{
+    background-color: green;
+    color: white;
+}
