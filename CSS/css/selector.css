@@ -235,3 +235,72 @@ ul li:nth-child(4){
     grid-row-start: 2;
     grid-row-end: 4;
 }
+
+
+/* flex */
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partent_relative{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.relative{
+    border: 1px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.partent_absolute{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.absolute{
+    border: 1px solid yellow;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/* font */
+
+.online_font {
+  font-family: "Redaction 35", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "one";
+    src: url(../Sofia_Sans_Condensed/SofiaSansCondensed-Italic-VariableFont_wght.ttf);
+}
+
+.offline_font{
+    font-family: "one";
+}
