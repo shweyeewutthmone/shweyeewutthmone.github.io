@@ -338,6 +338,11 @@
 /* end blog */
 
 /* start footer */
+
+.section{
+    background-color: black;
+}
+
 .footer{
     width: 80%;
     margin: auto;
