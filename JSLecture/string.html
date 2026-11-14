@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+
+    <script>
+        let firstName = "Developer";
+        let lastName = "Kyaw Gyi";
+        // let fullName = firstName + " " + lastName + ". I am 30 years old.";
+        // let fullName = firstName.concat(" ", lastName);
+        // let fullName = `${firstName} ${lastName}. I am 30 years old.`;
+        // console.log(fullName);
+
+        // let fullName = "<h3>" + firstName + " " + lastName + "</h3>" + "I am 30 years old.";
+        let fullName = `<h3>${firstName} ${lastName}.</h3> I am 30 years old.`;
+        document.write(fullName);
+
+        let job = "          Developer     Kyaw Gyi    ";
+        console.log(job.trim());
+
+        console.log(job.toUpperCase());
+        console.log(job.toLowerCase());
+
+        let ser = "Developer Kyaw Gyi";
+        console.log(ser.length);
+
+        console.log(ser.search("Kyaw"));
+        console.log(ser.indexOf("Kyaw"));
+
+        let rep = "I Live Myotha.";
+        console.log(rep);
+        console.log(rep.replace("Myotha", "Yangon"));
+
+        let num = '1,324,343,345,434';
+        console.log(num);
+        console.log(num.replace(/\,/g,''));
+
+        document.write("I'm Shwe Yee, 5'4\"");
+        document.write("<br>");
+
+        document.write('I\'m Shwe Yee. 5\' 4"')
+        document.write("<br>");
+
+        document.write(`I'm Shwe Yee. 5' 4"`);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

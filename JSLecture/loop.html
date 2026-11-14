@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops Lesson</h1>
+
+    <script>
+        // for loop
+        // for(initialize;condition = true;update){
+        //      //code
+        // }
+
+        //document.write("<h3>Hello World</h>");
+
+        for(let i = 0 ; i < 3 ; i++){
+            document.write(`<h3>Hello World ${i}</h3>`);
+        }
+
+        let laptopList = ['Macbook','Asus', 'Lenovo', 'Dell', 'HP', 'Acer'];
+
+        for(let i = 0; i < laptopList.length; i++){
+            document.write(`My Laptop is ${laptopList[i]} <br>`);
+        }
+
+
+        // homework
+        // user input ali
+
+
+        // *
+        // **
+        // ***
+        
+                    //   2 < 3
+        for(let i = 0; i < 3; i++){
+                    //       0 <= 2
+            for(let k = 0; k <= i; k++){
+                document.write("*");
+            }
+            document.write('<br>')
+        }
+
+
+
+       // hw
+       // *****
+       // ****
+       // ***
+       // **
+       // *
+
+
+       // while loop
+
+       // while(condition){
+       //   code
+       //}
+
+
+       // let number = parseInt(prompt("Enter A Number"));
+
+       // console.log(number);
+
+       // while(number < 100){
+       //    document.write(`Your number is while loop in ${number} <br>`)
+
+           // update
+       //    number += 10;
+       // }
+
+       // do while
+       // do{
+       //  // code
+       //  // update
+       //}while(condition)
+
+       let num = parseInt(prompt("Enter A Number"));
+
+       do{
+         document.write(`Your number is do while loop in ${num} <br>`)
+         // update
+         num += 10;
+       }while(num < 100)
+
+
+
+
+    </script>
+</body>
+</html>
