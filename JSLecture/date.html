@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <h1>Date Format</h1>
+
+    <p id="time"></p>
+
+    <script>
+        let todayDate = new Date();
+        console.log(todayDate);
+
+        let fullYear = todayDate.getFullYear();
+        console.log(fullYear);
+
+        let fullMonth = todayDate.getMonth();
+        console.log(fullMonth);
+
+        let fullDate = todayDate.getDate();
+        console.log(fullDate);
+
+        let getDay = todayDate.getDay();
+        console.log(getDay);
+
+        let getHour = todayDate.getHours();
+        console.log(getHour);
+
+        let getMin = todayDate.getMinutes();
+        console.log(getMin);
+
+        let getSec = todayDate.getSeconds();
+        console.log(getSec);
+
+        let timeFormat = todayDate.toLocaleTimeString();
+        console.log(timeFormat);
+
+        function timeInterval(){
+            let date = new Date();
+            let clock = date.toLocaleTimeString();
+            let myP = document.getElementById('time');
+            myP.innerText = clock;
+        }
+
+        setInterval(timeInterval,1000);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

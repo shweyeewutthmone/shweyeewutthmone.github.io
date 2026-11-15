@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function Lesson</h1>
+
+    <script>
+        // function
+        // function functionName(){
+        //       // code
+        //}
+
+        // nameing function
+        function say() {
+            document.write("<h3>Hello World</h3>");
+        }
+
+        // function call
+        say();
+
+        // function with parameter
+        function sum(num1,num2){
+            let result = num1 + num2;
+            document.write(`<h3>${num1} + ${num2} = ${result}</h3>`);
+        }
+        sum(10,5);
+        sum(233,134);
+        sum(323,43);
+        sum(234,23);
+        sum(34,54);
+
+        // default parameter function
+        function multi(num1 = 5, num2 = 10){
+            document.write(`<h3>${num1} * ${num2} = ${num1 * num2}</h3>`);
+        }
+        multi();
+        multi(2343,253);
+
+        // return function
+        function sub(num1,num2){
+            let result = num1 - num2
+            return result;
+        }
+
+        let data = sub(10,50);
+        
+        if (data > 0){
+            // logic
+            document.write(`<h3>Your Result is greater than 0</h3>`);
+        }else{
+            // logic
+            document.write(`<h3>Your Result is less than 0</h3>`);
+        }
+    </script>
+</body>
+</html>
