@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <script>
+        let secretNo = 8;
+        let userNo = Number(prompt("Enter a number between 1 to 10!"));
+        let count = 1;
+        
+        while ( secretNo != userNo ) {
+            if(userNo < secretNo){
+                alert("Lower, Try Again!");
+
+            }else{
+                alert("Higher, Try Again");
+            }
+            userNo = Number(prompt("Enter a number between 1 to 10!"));
+            count++;
+        }
+        
+        document.write(`<h1>Correct Now! <br> You guessed it in ${count} attempts </h1>`)
+    </script>
+</body>
+</html>
