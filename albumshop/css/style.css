@@ -394,6 +394,12 @@
     margin: 10px 10px 20px 0;
 }
 
+.order:hover{
+    color: white;
+    background-color: #855b73;
+    border: 1px solid #855b73;
+}
+
 .album_hover{
     display: inline-block;
     overflow: hidden;
@@ -441,6 +447,7 @@
     width: 100%;
     border-radius: 10px;
 }
+
 
 .preview_link{
     text-align: center;
@@ -526,13 +533,6 @@
     margin-bottom: 50px;
 }
 /* end contact  */
-
-/* start login  */
-.login_form{
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-}
 
 
 
