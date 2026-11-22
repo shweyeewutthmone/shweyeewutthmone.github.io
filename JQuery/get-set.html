@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is <i>jQuery Lesson</i></h1>
+    <p id="content1"></p>
+    <p id="content2"></p>
+    <button id="click">Click</button>
+
+    <input type="text" name="" id="name">
+    <button id="add">Add</button>
+    <h2></h2>
+
+    <script src="jquery-4.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#click').click(function(){
+                let getText = $('h1').text();
+                console.log(getText);
+                let getHtml = $('h1').html();
+                console.log(getHtml);
+                
+                $('#content1').text(getHtml);
+                $('#content2').html(getHtml);
+
+            })
+
+            $('#add').click(function(){
+                let name = $('#name').val();
+                console.log(name);
+                $('h2').text(name);
+                
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>jQuer is funny!</h1>
+    <button id="click">Click</button>
+    <p id="p-id">This is p id</p>
+    <p id="p-select">This is p select</p>
+    <p class="p-class">This is p class1</p>
+    <p class="p-class">This is p class2</p>
+
+    <script src="jquery-4.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#click").click(function(){
+                $('p').hide(function(){
+                    alert("p elements hided");
+                });
+            })
+
+            $("#p-id").click(function(){
+                $('.p-class').hide();
+            })
+
+            $("#p-select").click(function(){
+                // self-selector
+                // $('#p-select').hide();
+                $(this).hide();
+            })
+        })
+    </script>
+</body>
+</html>

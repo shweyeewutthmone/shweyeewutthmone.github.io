@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo cupiditate, doloremque vero corporis reprehenderit maxime aliquam voluptate repellendus! Similique quam voluptatibus minima explicabo fugit. Blanditiis assumenda voluptatibus enim dicta magni accusantium quis officia voluptas fugit debitis? Natus vel, explicabo rerum dicta cumque, quidem atque optio sequi magnam harum aut molestiae! Necessitatibus, id blanditiis! Quaerat eos ipsum alias consectetur delectus, nostrum explicabo tempore libero expedita et quidem obcaecati modi nulla illum ullam sunt minima eum. Cum odit consequatur veritatis excepturi expedita, alias explicabo hic et. Cupiditate impedit adipisci aut, assumenda dignissimos porro numquam reiciendis dolores dicta ducimus unde sit illo?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade-out">Fade Out</button>
+    <button id="fade-in">Fade In</button>
+    <button id="fade-toggle">Fade Toggle</button>
+    <button id="fade-to">Fade To</button>
+    
+    <script src="jquery-4.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('#hide').click(function(){
+            $('p').hide(2000);
+           })
+
+           $('#show').click(function(){
+            $('p').show('slow');
+           })
+
+           $('#toggle').click(function(){
+            $('p').toggle(1000);
+           })
+
+           $('#fade-out').click(function(){
+            $('p').fadeOut(3000);
+           })
+
+           $('#fade-in').click(function(){
+            $('p').fadeIn(3000);
+           })
+
+           $('#fade-toggle').click(function(){
+            $('p').fadeToggle(3000);
+           })
+
+           $('#fade-to').click(function(){
+            $('p').fadeTo(2000, 0.1);
+           })
+        })
+    </script>
+</body>
+</html>
